@@ -4,21 +4,21 @@ import com.devsuperior.dsvendas.model.Seller;
 
 import java.io.Serializable;
 
-public class SelletDTO implements Serializable {
+public class SellerDTO implements Serializable {
     private static final long serialVersionUID = 1L;
     private Long id;
     private String name;
 
-    public SelletDTO() {
+    public SellerDTO() {
 
     }
 
-    public SelletDTO(Long id, String name) {
+    public SellerDTO(Long id, String name) {
         this.id = id;
         this.name = name;
     }
 
-    public SelletDTO(Seller seller) {
+    public SellerDTO(Seller seller) {
         this.id = seller.getId();
         this.name = seller.getName();
     }
